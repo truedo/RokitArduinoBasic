@@ -6,9 +6,6 @@ firmware_images_url = "https://truedo.github.io/zumimini/"
 # List of supported apps
 supported_apps = ["ZumiMini"]
 
-# Optional: Application configuration markdown file URL
-config_readme_url = "https://github.com/truedo/RokitArduinoBasic/tree/master/zumimini.md"
-
 [ZumiMini]
 # Supported chipsets
 chipsets = ["ESP32-S3"]
@@ -16,12 +13,3 @@ chipsets = ["ESP32-S3"]
 # Binary file paths and offsets for each chipset
 image.esp32-s3 = "merged-flash.bin"
 
-# Optional: Phone app URLs
-android_app_url = ""
-ios_app_url = ""
-
-# Optional: Additional information markdown file URL
-readme.text = "https://github.com/truedo/RokitArduinoBasic/tree/master/zumimini.md"
-
-# Optional: Console baudrate (default is 115200)
-console_baudrate = 115200
