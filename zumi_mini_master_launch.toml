@@ -7,7 +7,7 @@ firmware_images_url = "https://github.com/truedo/RokitArduinoBasic/tree/master/z
 supported_apps = ["ZumiMini"]
 
 # Optional: Application configuration markdown file URL
-config_readme_url = "http://example.com/firmware/config_readme.md"
+config_readme_url = "https://github.com/truedo/RokitArduinoBasic/tree/master/zumimini.md"
 
 [ZumiMini]
 # Supported chipsets
