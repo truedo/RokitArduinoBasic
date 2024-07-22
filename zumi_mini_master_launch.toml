@@ -14,9 +14,7 @@ config_readme_url = "https://github.com/truedo/RokitArduinoBasic/tree/master/zum
 chipsets = ["ESP32-S3"]
 
 # Binary file paths and offsets for each chipset
-image.esp32-s3.bootloader = { file = "bootloader.bin", offset = "0x0000" }
-image.esp32-s3.partition_table = { file = "partition-table.bin", offset = "0x8000" }
-image.esp32-s3.application = { file = "ZumiMini_main.bin", offset = "0x10000" }
+image.esp32-s3 = "merged-flash.bin"
 
 # Optional: Phone app URLs
 android_app_url = ""
