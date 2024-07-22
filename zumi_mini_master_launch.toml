@@ -1,7 +1,7 @@
 esp_toml_version = 1.0
 
 # URL to your firmware images directory
-firmware_images_url = "https://github.com/truedo/RokitArduinoBasic/tree/master/zumi"
+firmware_images_url = "https://github.com/truedo/RokitArduinoBasic/tree/master/zumi/"
 
 # List of supported apps
 supported_apps = ["ZumiMini"]
