@@ -1,7 +1,7 @@
 esp_toml_version = 1.0
 
 # URL to your firmware images directory
-firmware_images_url = "http://example.com/firmware"
+firmware_images_url = "https://github.com/truedo/RokitArduinoBasic/tree/master/zumi"
 
 # List of supported apps
 supported_apps = ["ZumiMini"]
@@ -26,4 +26,4 @@ ios_app_url = ""
 readme.text = "http://example.com/firmware/readme.md"
 
 # Optional: Console baudrate (default is 115200)
-console_baudrate = 115200
+console_baudrate = 921600
