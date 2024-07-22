@@ -1,28 +1,29 @@
 esp_toml_version = 1.0
-firmware_images_url = "https://dl.espressif.com/AE/Zumi-mini/"
 
-supported_apps = ["Zumi-mini_Demo_EN_V0_3_0", "Zumi-mini_Demo_CN_V0_3_0", "Zumi-mini_USB_Headset_V0_0_1", "Zumi-mini_ChatGPT_Demo_V1_0"]
+# URL to your firmware images directory
+firmware_images_url = "http://example.com/firmware"
 
-[Zumi-mini_Demo_EN_V0_3_0]
+# List of supported apps
+supported_apps = ["ZumiMini"]
+
+# Optional: Application configuration markdown file URL
+config_readme_url = "http://example.com/firmware/config_readme.md"
+
+[ZumiMini]
+# Supported chipsets
 chipsets = ["ESP32-S3"]
-image.esp32-s3 = "Zumi-mini_Demo_EN_V0.3.0.bin"
+
+# Binary file paths and offsets for each chipset
+image.esp32-s3.bootloader = { file = "bootloader.bin", offset = "0x0000" }
+image.esp32-s3.partition_table = { file = "partition-table.bin", offset = "0x8000" }
+image.esp32-s3.application = { file = "ZumiMini_main.bin", offset = "0x10000" }
+
+# Optional: Phone app URLs
 android_app_url = ""
 ios_app_url = ""
 
-[Zumi-mini_Demo_CN_V0_3_0]
-chipsets = ["ESP32-S3"]
-image.esp32-s3 = "Zumi-mini_Demo_CN_V0.3.0.bin"
-android_app_url = ""
-ios_app_url = ""
+# Optional: Additional information markdown file URL
+readme.text = "http://example.com/firmware/readme.md"
 
-[Zumi-mini_USB_Headset_V0_0_1]
-chipsets = ["ESP32-S3"]
-image.esp32-s3 = "Zumi-mini_USB_Headset_V0.0.1.bin"
-android_app_url = ""
-ios_app_url = ""
-
-[Zumi-mini_ChatGPT_Demo_V1_0]
-chipsets = ["ESP32-S3"]
-image.esp32-s3 = "Zumi-mini_ChatGPT_Demo_V1.0.bin"
-android_app_url = ""
-ios_app_url = ""
+# Optional: Console baudrate (default is 115200)
+console_baudrate = 115200
